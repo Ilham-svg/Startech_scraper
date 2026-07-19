@@ -24,8 +24,9 @@ OUTPUT_DIR = "output"             # Directory for output files
 REQUEST_DELAY = 2                 # Seconds between requests (polite scraping)
 TIMEOUT = 30                      # Request timeout in seconds
 MAX_RETRIES = 2                   # Number of retries per URL
-# IMPORTANT: Do NOT include "br" in Accept-Encoding. The server sends Brotli (Error of V1 fixed in V2)
-# which Python requests cannot decode without the extra "brotli" package.
-# Keeping it to "gzip, deflate" ensures reliable decoding.
+# IMPORTANT: 
+Do NOT include "br" in Accept-Encoding. The server sends Brotli (Error of V1 fixed in V2)
+which Python requests cannot decode without the extra "brotli" package.
+Keeping it to "gzip, deflate" ensures reliable decoding.
 
 
